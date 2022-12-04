@@ -36,13 +36,14 @@ export const StyledHeader = styled.header`
     margin-left: auto;
     color: whitesmoke;
   }
-  .notice-in-development {
-    padding: 0.1rem 0.8rem;
-    background-color: red;
-    color: yellow;
-    max-width: fit-content;
+  .category-selector {
+    margin-right: 1rem;
+    height: 1.5rem;
+    width: 10rem;
+    outline: none;
+    border: none;
     border-radius: 8px;
-    font-style: italic;
-    font-weight: bold;
+    background-color: #2d2d2d;
+    color: whitesmoke;
   }
 `
