@@ -5,5 +5,6 @@ export const StyledContents = styled.div`
   grid-template-columns: repeat(3, 1fr);
   margin: 3rem 4rem 0 4rem;
   padding: 1rem;
-  height: 36rem;
+  justify-content: center;
+  align-items: center;
 `

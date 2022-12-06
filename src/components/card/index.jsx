@@ -23,7 +23,11 @@ function getCardClassName(skillCategory, category) {
     case 'fullstack':
       if (skillCategory === 'fullstack') {
         return 'fullstack'
-      } else if (skillCategory === 'common') {
+      } else if (
+        skillCategory === 'common' ||
+        skillCategory === 'frontend' ||
+        skillCategory === 'backend'
+      ) {
         return 'following'
       } else {
         return 'unselected'
