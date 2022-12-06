@@ -1,50 +1,55 @@
 import { StyledCard } from 'src/components/card/style'
 
-function getCardClassName(skillCategory, category) {
+function getCardClassName(skillLineway, category) {
   switch (category) {
-    case 'frontend':
-      if (skillCategory === 'frontend') {
-        return 'frontend'
-      } else if (skillCategory === 'common') {
-        return 'following'
-      } else {
-        return 'unselected'
+    case 'react':
+      switch (skillLineway) {
+        case 'all':
+        case 'web':
+        case 'javascript':
+        case 'cssx':
+        case 'node':
+        case 'next':
+          return 'following'
+        case 'react':
+          return 'react'
+        default:
+          return 'unselected'
       }
-      break
-    case 'backend':
-      if (skillCategory === 'backend') {
-        return 'backend'
-      } else if (skillCategory === 'common') {
-        return 'following'
-      } else {
-        return 'unselected'
+    case 'dotnet':
+      switch (skillLineway) {
+        case 'all':
+        case 'sql':
+        case 'nosql':
+        case 'csharp':
+          return 'following'
+        case 'dotnet':
+          return 'dotnet'
+        default:
+          return 'unselected'
       }
-      break
-    case 'fullstack':
-      if (skillCategory === 'fullstack') {
-        return 'fullstack'
-      } else if (
-        skillCategory === 'common' ||
-        skillCategory === 'frontend' ||
-        skillCategory === 'backend'
-      ) {
-        return 'following'
-      } else {
-        return 'unselected'
+    case 'aspnet':
+      switch (skillLineway) {
+        case 'all':
+        case 'web':
+        case 'sql':
+        case 'nosql':
+        case 'csharp':
+          return 'following'
+        case 'aspnet':
+          return 'aspnet'
+        default:
+          return 'unselected'
       }
-      break
     default:
       return 'unselected'
-      break
   }
 }
 
-export default function Card({ skillTitle, skillCategory, category }) {
+export default function Card({ skillTitle, skillLineway, category }) {
   return (
-    <StyledCard>
-      <div className={getCardClassName(skillCategory, category)}>
-        {skillTitle}
-      </div>
+    <StyledCard skillClassName={getCardClassName(skillLineway, category)}>
+      {skillTitle}
     </StyledCard>
   )
 }

@@ -15,9 +15,9 @@ export default function Header({ title, setCategory }) {
           }}
         >
           <option value={'unselected'}>None</option>
-          <option value={'frontend'}>frontend</option>
-          <option value={'backend'}>backend</option>
-          <option value={'fullstack'}>fullstack</option>
+          <option value={'react'}>React.JS</option>
+          <option value={'dotnet'}>Dotnet Core</option>
+          <option value={'aspnet'}>Aspnet Core</option>
         </select>
         <h1>{title}</h1>
       </div>

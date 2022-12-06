@@ -19,7 +19,7 @@ export default function Contents({ category }) {
           <Card
             key={skill.title}
             skillTitle={skill.title}
-            skillCategory={skill.category}
+            skillLineway={skill.lineway}
             category={category}
           />
         )
