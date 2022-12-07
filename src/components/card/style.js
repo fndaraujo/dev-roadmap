@@ -1,7 +1,8 @@
 import { css } from 'styled-components'
 import styled from 'styled-components'
 
-const textcolor_following = 'whitesmoke'
+const textcolor_card_selected = 'whitesmoke'
+const textcolor_card_unselected = '#c1c1c1'
 
 const bgcolor_react = '#61dafb;'
 const bgcolor_following = '#c3c3c3'
@@ -27,36 +28,36 @@ export const StyledCard = styled.div`
       case 'react':
         return css`
           background-color: ${bgcolor_react};
-          color: whitesmoke;
+          color: ${textcolor_card_selected};
         `
       case 'javascript':
         return css`
           background-color: ${bgcolor_javascript};
-          color: whitesmoke;
+          color: ${textcolor_card_selected};
         `
       case 'node':
         return css`
           background-color: ${bgcolor_nodejs};
-          color: whitesmoke;
+          color: ${textcolor_card_selected};
         `
       case 'dotnet':
         return css`
           background-color: ${bgcolor_dotnet};
-          color: whitesmoke;
+          color: ${textcolor_card_selected};
         `
       case 'aspnet':
         return css`
           background-color: ${bgcolor_aspnet};
-          color: whitesmoke;
+          color: ${textcolor_card_selected};
         `
       case 'following':
         return css`
           background-color: ${bgcolor_following};
-          color: whitesmoke;
+          color: ${textcolor_card_selected};
         `
       default:
         return css`
-          color: #c1c1c1;
+          color: ${textcolor_card_unselected};
         `
     }
   }}

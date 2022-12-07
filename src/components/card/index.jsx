@@ -10,6 +10,7 @@ function getCardClassName(skillLineway, category) {
         case 'cssx':
         case 'node':
         case 'next':
+        case 'database':
           return 'following'
         case 'react':
           return 'react'
@@ -21,6 +22,8 @@ function getCardClassName(skillLineway, category) {
         case 'all':
         case 'sql':
         case 'nosql':
+        case 'database':
+        case 'api':
         case 'csharp':
           return 'following'
         case 'dotnet':
@@ -34,6 +37,8 @@ function getCardClassName(skillLineway, category) {
         case 'web':
         case 'sql':
         case 'nosql':
+        case 'database':
+        case 'api':
         case 'csharp':
           return 'following'
         case 'aspnet':
