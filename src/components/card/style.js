@@ -16,9 +16,8 @@ export const StyledCard = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem;
+  margin: 0.8rem 2rem;
   height: 2rem;
-  width: 16rem;
   padding: 0.2rem;
   border: solid 1px #c1c1c1;
   border-radius: 0.8rem;
@@ -61,4 +60,22 @@ export const StyledCard = styled.div`
         `
     }
   }}
+
+  @media screen and (max-width: 1650px) {
+    margin: 0.6rem 1.5rem;
+    padding: 0.4rem;
+  }
+  @media screen and (max-width: 1350px) {
+    margin: 0.8rem 1rem;
+    padding: 0.4rem;
+  }
+  @media screen and (max-width: 1050px) {
+    margin: 0.6rem 0.6rem;
+    padding: 0.6rem;
+  }
+  @media screen and (max-width: 750px) {
+    margin: 0.8rem 0.1rem;
+    padding: 0.6rem;
+    height: 2.2rem;
+  }
 `
